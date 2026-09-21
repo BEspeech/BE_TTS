@@ -1,0 +1,156 @@
+schema_version: 1
+snapshot_date: "2026-09-21"
+project: "BE_TTS"
+language:
+  name: "Belarusian"
+  code: "be"
+
+resources:
+  - id: hf-fosters-homograph-model
+    type: model
+    platform: huggingface
+    owner: fosters
+    name: homograph-bel-xlm-roberta-base
+    url: https://huggingface.co/fosters/homograph-bel-xlm-roberta-base
+    purpose:
+      - homograph-disambiguation
+      - stress-prediction
+      - tts
+    license: other
+    maturity: experimental
+    notes:
+      - "Designed to resolve the stress variant of an exact Belarusian homograph occurrence before phonemization."
+      - "Gold-validation macro-F1 0.901211 on 275 contexts / 28 homographs; not a broad estimate over all trained homographs."
+      - "Most training labels are silver/model-generated; provenance and licensing review is ongoing."
+
+  - id: hf-fosters-audio-corpus
+    type: dataset
+    platform: huggingface
+    owner: fosters
+    name: be-bel-audio-corpus
+    url: https://huggingface.co/datasets/fosters/be-bel-audio-corpus
+    purpose:
+      - speech-corpus
+      - tts
+    license: apache-2.0
+    metrics:
+      rows: 49606
+      size_gb: 21.8
+      duration_seconds: 315512
+      downloads_last_month_snapshot: 60
+    notes:
+      - "Three constituent sets; combined published duration is approximately 87 h 38 m 32 s."
+
+  - id: hf-fosters-ministerskija
+    type: collection
+    platform: huggingface
+    owner: fosters
+    name: Ministerskija
+    url: https://huggingface.co/collections/fosters/ministerskija
+    purpose:
+      - aligned-audiobooks
+      - speech-corpus
+      - tts
+    license: per-artifact
+    metrics:
+      books: 35
+      audio_text_pairs: 60022
+      duration_hours: 260
+    notes:
+      - "Collection description states ASR + Gemini alignment with confidence >= 0.95."
+      - "Verify license/provenance at individual artifact level before reuse."
+
+  - id: hf-fosters-native-audiobooks
+    type: collection
+    platform: huggingface
+    owner: fosters
+    name: Belarusian Audiobooks (native)
+    url: https://huggingface.co/collections/fosters/belarusian-audiobooks-native
+    purpose:
+      - aligned-audiobooks
+      - tts
+    license: per-artifact
+    notes:
+      - "Native sample rate, mono, chunks up to 30 seconds, with audio/text/duration and aligned transcriptions."
+
+  - id: hf-archivartaunik-tts-datasets
+    type: collection
+    platform: huggingface
+    owner: archivartaunik
+    name: Belarusian TTS Datasets
+    url: https://huggingface.co/collections/archivartaunik/belarusian-tts-datasets
+    purpose:
+      - tts
+      - speech-corpus
+    license: per-artifact
+    notes:
+      - "Curated collection of Belarusian TTS datasets; verify individual dataset cards before reuse."
+
+  - id: hf-archivartaunik-omnivoice-5500
+    type: model
+    platform: huggingface
+    owner: archivartaunik
+    name: omnivoice-finetune-be-5500
+    url: https://huggingface.co/archivartaunik/omnivoice-finetune-be-5500
+    purpose:
+      - tts
+    license: other
+    maturity: experimental
+    metrics:
+      parameters_billions: 0.6
+      checkpoint_step: 5500
+      eval_loss: 3.4399
+
+  - id: hf-archivartaunik-bettsnaciski
+    type: demo
+    platform: huggingface
+    owner: archivartaunik
+    name: BeTTSNaciski
+    url: https://huggingface.co/spaces/archivartaunik/BeTTSNaciski
+    purpose:
+      - tts
+      - stress
+    metrics:
+      likes_snapshot: 7
+
+  - id: hf-archivartaunik-bextts
+    type: demo
+    platform: huggingface
+    owner: archivartaunik
+    name: Bextts
+    url: https://huggingface.co/spaces/archivartaunik/Bextts
+    purpose:
+      - tts
+    metrics:
+      likes_snapshot: 18
+
+  - id: kaggle-wisekinder-xttsv2-by
+    type: dataset
+    platform: kaggle
+    owner: wisekinder
+    name: XTTSv2-BY
+    url: https://www.kaggle.com/datasets/wisekinder/xttsv2-by
+    purpose:
+      - tts
+      - training
+    license: apache-2.0
+    metrics:
+      size_gb: 17.86
+      files: 7132
+      views_snapshot: 540
+      downloads_snapshot: 21
+
+  - id: kaggle-wisekinder-xttsv2-tune
+    type: model
+    platform: kaggle
+    owner: wisekinder
+    name: "[STT] XTTSv2 tune on audio data set"
+    url: https://www.kaggle.com/models/wisekinder/stt-xttsv2-tune-on-audio-data-set
+    purpose:
+      - tts-experiment
+    license: apache-2.0
+    maturity: legacy-experiment
+    metrics:
+      size_gb: 19.04
+      views_snapshot: 245
+      downloads_snapshot: 80
