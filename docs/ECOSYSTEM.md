@@ -10,9 +10,9 @@ Metrics are snapshots and may change. Hugging Face profile counts below count pu
 
 Across the two public Hugging Face profiles included in this project inventory:
 
-- **690 dataset repositories** (251 + 439)
+- **689 dataset repositories** (251 + 438)
 - **62 model repositories** (3 + 59)
-- **33 Spaces** (5 + 28)
+- **34 Spaces** (5 + 29)
 - **6 collections** (4 + 2)
 
 These totals are useful as evidence of sustained public work, but they should not be interpreted as 690 independent datasets or 62 production-ready models.
@@ -103,9 +103,9 @@ Profile: https://huggingface.co/archivartaunik
 
 Public profile snapshot:
 
-- 439 dataset repositories
+- 438 dataset repositories
 - 59 model repositories
-- 28 Spaces
+- 29 Spaces
 - 2 collections
 - recent Space activity visible on the public profile at snapshot time
 
