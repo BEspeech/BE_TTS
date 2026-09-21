@@ -106,6 +106,7 @@ resources:
     platform: huggingface
     owner: archivartaunik
     name: BeTTSNaciski
+    license: not-declared
     url: https://huggingface.co/spaces/archivartaunik/BeTTSNaciski
     purpose:
       - tts
@@ -118,6 +119,7 @@ resources:
     platform: huggingface
     owner: archivartaunik
     name: Bextts
+    license: not-declared
     url: https://huggingface.co/spaces/archivartaunik/Bextts
     purpose:
       - tts
