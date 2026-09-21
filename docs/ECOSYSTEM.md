@@ -8,7 +8,7 @@ Metrics are snapshots and may change. Hugging Face profile counts below count pu
 
 ## Aggregate public Hugging Face footprint
 
-Across the two public maintainer profiles:
+Across the two public Hugging Face profiles included in this project inventory:
 
 - **690 dataset repositories** (251 + 439)
 - **62 model repositories** (3 + 59)
