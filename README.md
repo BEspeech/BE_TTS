@@ -25,7 +25,7 @@ Our goal is to make the work reusable beyond a single model by publishing common
 
 Snapshot date: **2026-09-21**. Counts below refer to public artifact repositories shown on the corresponding profiles; they are not counts of unique underlying corpora.
 
-| Maintainer profile | Public footprint | Representative work |
+| Public profile | Public footprint | Representative work |
 | --- | ---: | --- |
 | [fosters on Hugging Face](https://huggingface.co/fosters) | 251 dataset repos · 3 models · 5 Spaces · 4 collections | Belarusian homograph disambiguation, phonemization, XTTS, aligned speech/audiobook corpora |
 | [archivartaunik on Hugging Face](https://huggingface.co/archivartaunik) | 439 dataset repos · 59 models · 28 Spaces · 2 collections | Belarusian TTS datasets, XTTS/OmniVoice checkpoints, TTS + stress demos |
