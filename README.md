@@ -21,6 +21,32 @@ Belarusian remains comparatively under-resourced in modern speech and NLP toolin
 
 Our goal is to make the work reusable beyond a single model by publishing common interfaces, evaluation assets, dataset metadata, and reproducible tooling.
 
+## Research tracks
+
+### XTTS: sustained Belarusian TTS training
+
+The public model history contains **40+ XTTS-labelled experiment/checkpoint repositories**, covering multiple dataset mixtures, long checkpoint sequences, denoised data, later V3/new-DVAE branches, and dedicated stress-aware `Naciski` models.
+
+This is an iterative training program rather than a single fine-tune.
+
+→ [Belarusian XTTS research lineage](docs/XTTSV2.md)
+
+### Speech datasets and data engineering
+
+The public data work includes a **260-hour / 60,022-pair** aligned audiobook collection, a **49,606-row** Belarusian audio corpus, native-rate audiobook datasets, curated checked TTS sets, and supporting dataset QA/conversion tooling.
+
+→ [Belarusian speech datasets](docs/DATASETS.md)
+
+### Homographs, stress and pronunciation
+
+The separate open-source homograph subsystem currently covers **19,992 homograph surfaces**, **40,167 stressed candidates**, and **73,047 GrammarDB analyses**. A contextual XLM-R model was trained on **102,029 contexts across 1,941 homographs**, with gold/silver labels kept distinct.
+
+Related OSS:
+- [homograph-bel](https://github.com/idegterov/homograph-bel)
+- [HomographBel Dictionary Candidate QA](https://github.com/idegterov/HomographBel-Dictionary-QA)
+
+→ [Belarusian homographs and stress](docs/HOMOGRAPHS.md)
+
 ## Public ecosystem snapshot
 
 Snapshot date: **2026-09-21**. Counts below refer to public artifact repositories shown on the corresponding profiles; they are not counts of unique underlying corpora.
@@ -28,7 +54,7 @@ Snapshot date: **2026-09-21**. Counts below refer to public artifact repositorie
 | Public profile | Public footprint | Representative work |
 | --- | ---: | --- |
 | [fosters on Hugging Face](https://huggingface.co/fosters) | 251 dataset repos · 3 models · 5 Spaces · 4 collections | Belarusian homograph disambiguation, phonemization, XTTS, aligned speech/audiobook corpora |
-| [archivartaunik on Hugging Face](https://huggingface.co/archivartaunik) | 439 dataset repos · 59 models · 28 Spaces · 2 collections | Belarusian TTS datasets, XTTS/OmniVoice checkpoints, TTS + stress demos |
+| [archivartaunik on Hugging Face](https://huggingface.co/archivartaunik) | 438 dataset repos · 59 models · 29 Spaces · 2 collections | Belarusian TTS datasets, XTTS/OmniVoice checkpoints, TTS + stress demos |
 | [wisekinder on Kaggle](https://www.kaggle.com/wisekinder) | Public profile; selected artifacts indexed below | Earlier XTTS/TTS experiments and datasets |
 | [siarheys on Kaggle](https://www.kaggle.com/siarheys) | Public profile; aggregate metrics pending verification | Additional project research artifacts |
 
