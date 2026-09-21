@@ -6,14 +6,14 @@ This roadmap describes the transition from a distributed set of public Belarusia
 
 - [x] Establish a public GitHub hub.
 - [x] Add project mission, ecosystem context, and contribution rules.
-- [ ] Add a machine-readable inventory of public datasets, models, demos, and their licenses.
-- [ ] Define repository conventions for code, evaluations, examples, and manifests.
+- [x] Add a machine-readable inventory of public datasets, models, demos, and their licenses.
+- [x] Define initial repository conventions for code, evaluations, examples, and manifests.
 
 ## Phase 1 — Reproducibility
 
 - [ ] Add lightweight dataset/model loaders.
 - [ ] Add small, redistributable fixtures for tests.
-- [ ] Add provenance and license validation for resource manifests.
+- [x] Add initial provenance/license metadata validation for resource manifests.
 - [ ] Add CI for formatting, tests, and documentation links.
 - [ ] Publish reproducible baseline commands.
 
