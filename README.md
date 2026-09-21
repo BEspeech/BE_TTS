@@ -29,17 +29,19 @@ Snapshot date: **2026-09-21**. Counts below refer to public artifact repositorie
 | --- | ---: | --- |
 | [fosters on Hugging Face](https://huggingface.co/fosters) | 251 dataset repos · 3 models · 5 Spaces · 4 collections | Belarusian homograph disambiguation, phonemization, XTTS, aligned speech/audiobook corpora |
 | [archivartaunik on Hugging Face](https://huggingface.co/archivartaunik) | 439 dataset repos · 59 models · 28 Spaces · 2 collections | Belarusian TTS datasets, XTTS/OmniVoice checkpoints, TTS + stress demos |
-| [wisekinder on Kaggle](https://www.kaggle.com/wisekinder) | Public datasets/models/notebooks | Earlier speech/TTS experiments and datasets |
-| [siarheys on Kaggle](https://www.kaggle.com/siarheys) | Public datasets/notebooks | Public research artifacts |
+| [wisekinder on Kaggle](https://www.kaggle.com/wisekinder) | Public profile; selected artifacts indexed below | Earlier XTTS/TTS experiments and datasets |
+| [siarheys on Kaggle](https://www.kaggle.com/siarheys) | Public profile; aggregate metrics pending verification | Additional project research artifacts |
 
 Representative public resources include:
 
 - [Belarusian contextual homograph model](https://huggingface.co/fosters/homograph-bel-xlm-roberta-base)
 - [Belarusian audio corpus](https://huggingface.co/datasets/fosters/be-bel-audio-corpus)
-- [Belarusian Audiobooks collection](https://huggingface.co/collections/fosters/belarusian-audiobooks-native-67dc252ec9e8eb83b5f2fc9d)
-- [Belarusian TTS Datasets collection](https://huggingface.co/collections/archivartaunik/belarusian-tts-datasets-67efeb75a48074369bf91a3d)
+- [Belarusian Audiobooks (native) collection](https://huggingface.co/collections/fosters/belarusian-audiobooks-native)
+- [Ministerskija aligned audiobook collection](https://huggingface.co/collections/fosters/ministerskija)
+- [Belarusian TTS Datasets collection](https://huggingface.co/collections/archivartaunik/belarusian-tts-datasets)
 - [BeTTSNaciski: Belarusian TTS + stress demo](https://huggingface.co/spaces/archivartaunik/BeTTSNaciski)
 - [Bextts: Belarusian TTS demo](https://huggingface.co/spaces/archivartaunik/Bextts)
+- [XTTSv2-BY on Kaggle](https://www.kaggle.com/datasets/wisekinder/xttsv2-by)
 
 See [docs/ECOSYSTEM.md](docs/ECOSYSTEM.md) for a more detailed, date-stamped inventory and quality notes.
 
