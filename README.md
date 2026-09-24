@@ -73,6 +73,8 @@ See [docs/ECOSYSTEM.md](docs/ECOSYSTEM.md) for a more detailed, date-stamped inv
 
 ## Repository status
 
+See [project status and public resources](docs/PROJECT_STATUS.md) for available tools and upcoming integrations.
+
 This repository is currently being bootstrapped as the project's public engineering and maintenance hub.
 
 Planned source layout:
@@ -94,10 +96,10 @@ Large datasets and model weights will remain on appropriate public artifact plat
 
 See [docs/ROADMAP.md](docs/ROADMAP.md). Immediate priorities are:
 
-1. publish a machine-readable public resource manifest with license/provenance metadata;
+1. extend the existing machine-readable resource manifest with artifact-level license/provenance and immutable revisions;
 2. move reusable homograph, pronunciation, and TTS evaluation code into this repository;
 3. add reproducible examples and automated tests;
-4. establish CI and release-quality checks;
+4. expand the existing manifest-validation CI with regression and release-quality checks;
 5. document stable interfaces between text normalization, stress resolution, phonemization, and TTS.
 
 ## Data and model provenance
