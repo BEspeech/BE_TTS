@@ -15,8 +15,10 @@ This roadmap describes the transition from a distributed set of public Belarusia
 - [ ] Build the canonical dataset/provenance registry ([#4](https://github.com/BEspeech/BE_TTS/issues/4)).
 - [ ] Add small, redistributable fixtures for tests.
 - [x] Add initial provenance/license metadata validation for resource manifests.
-- [ ] Add CI for formatting, tests, and documentation links.
-- [ ] Publish reproducible baseline commands.
+- [x] Add CI regression tests for resource metadata validation.
+- [ ] Add CI for formatting and documentation links.
+- [x] Document reproducible offline validation and test commands.
+- [ ] Publish reproducible inference baseline commands.
 
 ## Phase 2 — Homographs, stress, and pronunciation
 
