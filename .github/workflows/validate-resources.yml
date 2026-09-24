@@ -5,6 +5,7 @@ on:
     paths:
       - "data/manifests/**"
       - "tools/validate_resource_manifest.py"
+      - "tests/**"
       - "requirements-dev.txt"
       - ".github/workflows/validate-resources.yml"
   push:
@@ -33,3 +34,6 @@ jobs:
 
       - name: Validate public resource manifest
         run: python tools/validate_resource_manifest.py
+
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
