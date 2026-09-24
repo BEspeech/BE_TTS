@@ -16,7 +16,7 @@ BE_TTS aims to make Belarusian speech technology reusable: speech datasets and q
 
 ## What exists in this repository today
 
-The repository currently contains project documentation, an external resource manifest, an offline Python validator, and a GitHub Actions workflow for that validator. The planned `src/`, `evals/`, `tests/` and `examples/` directories are not yet published here. Linked models and datasets live on Hugging Face and Kaggle; their source, licensing and provenance must be assessed per artifact. A successful manifest check validates metadata shape, not dataset rights, model quality, URL availability or training reproducibility.
+The repository currently contains project documentation, an external resource manifest, an offline Python validator, regression tests, and a GitHub Actions workflow running both validation and tests. The planned `src/`, `evals/` and `examples/` directories are not yet published here. Linked models and datasets live on Hugging Face and Kaggle; their source, licensing and provenance must be assessed per artifact. A successful manifest check validates metadata shape, not dataset rights, model quality, URL availability or training reproducibility.
 
 ## Next engineering milestones
 

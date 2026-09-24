@@ -77,7 +77,9 @@ See [project status and public resources](docs/PROJECT_STATUS.md) for available 
 
 This repository is currently being bootstrapped as the project's public engineering and maintenance hub.
 
-Planned source layout:
+Available now: [resource manifest](data/manifests/public-resources.yaml), [offline validator](tools/validate_resource_manifest.py), [regression tests](tests/test_resource_manifest.py), and [validation CI](.github/workflows/validate-resources.yml). See [CONTRIBUTING.md](CONTRIBUTING.md#run-the-offline-checks) for setup and commands.
+
+Target source layout (inference and evaluation directories are planned):
 
 ```text
 BE_TTS/
@@ -98,7 +100,7 @@ See [docs/ROADMAP.md](docs/ROADMAP.md). Immediate priorities are:
 
 1. extend the existing machine-readable resource manifest with artifact-level license/provenance and immutable revisions;
 2. move reusable homograph, pronunciation, and TTS evaluation code into this repository;
-3. add reproducible examples and automated tests;
+3. add reproducible inference examples and expand the existing automated tests;
 4. expand the existing manifest-validation CI with regression and release-quality checks;
 5. document stable interfaces between text normalization, stress resolution, phonemization, and TTS.
 

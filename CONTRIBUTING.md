@@ -64,3 +64,23 @@ When evaluation metrics are reported, include the exact dataset/split and enough
 The initial repository structure is intentionally lightweight while reusable code and evaluation assets are consolidated from existing public research work.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for current priorities.
+
+## Run the offline checks
+
+From a checkout, with Python 3.12:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+python tools/validate_resource_manifest.py
+python -m unittest discover -s tests -v
+```
+
+On Windows, activate with `.venv\Scripts\activate` instead. These checks require no GPU, model downloads or API keys after dependencies are installed. The validator also accepts a manifest path:
+
+```bash
+python tools/validate_resource_manifest.py path/to/manifest.yaml
+```
+
+Checks cover metadata structure and basic invariants. They do not verify remote availability, artifact licenses, recording rights or model quality.
