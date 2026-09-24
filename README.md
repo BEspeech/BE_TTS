@@ -73,7 +73,7 @@ See [docs/ECOSYSTEM.md](docs/ECOSYSTEM.md) for a more detailed, date-stamped inv
 
 ## Repository status
 
-For application reviewers: [public evidence and current repository status](docs/OSS_APPLICATION.md).
+See [project status and public resources](docs/PROJECT_STATUS.md) for available tools and upcoming integrations.
 
 This repository is currently being bootstrapped as the project's public engineering and maintenance hub.
 

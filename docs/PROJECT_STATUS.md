@@ -1,6 +1,6 @@
-# OSS application: public evidence and current status
+# Project status and public resources
 
-This page is a concise, reviewable entry point for the BE_TTS open-source application. It distinguishes published work across platforms from code currently present in this GitHub repository. Figures are snapshots from 2026-09-21; follow the linked artifact cards for current details.
+This page summarizes published work across platforms and the tools currently available in this GitHub repository. Figures are snapshots from 2026-09-21; follow the linked artifact cards for current details.
 
 ## Project and public work
 
@@ -18,10 +18,6 @@ BE_TTS aims to make Belarusian speech technology reusable: speech datasets and q
 
 The repository currently contains project documentation, an external resource manifest, an offline Python validator, and a GitHub Actions workflow for that validator. The planned `src/`, `evals/`, `tests/` and `examples/` directories are not yet published here. Linked models and datasets live on Hugging Face and Kaggle; their source, licensing and provenance must be assessed per artifact. A successful manifest check validates metadata shape, not dataset rights, model quality, URL availability or training reproducibility.
 
-## Contribution and proposed OSS work
+## Next engineering milestones
 
 The next useful release is a small, reproducible vertical slice: a public Belarusian stress test set with provenance, a dictionary-backed baseline, an adapter from text and target spans to stress candidates, and regression tests in CI. Next, publish checkpoint-specific experiment manifests with immutable dataset and model revisions, training settings, permitted reuse terms and comparable evaluations. See the [roadmap](ROADMAP.md) and [contributing guide](../CONTRIBUTING.md).
-
-## Application integrity checklist
-
-Before submitting, verify that the applicant controls or is authorized to represent the linked accounts and repositories; add a direct maintainer/contact identity and a precise description of their roles. Confirm current artifact licenses and recording/speaker rights. Replace snapshot counts with freshly verified counts if citing them in the form. Describe requested Codex use in concrete terms (code migration, tests, data QA, evaluation, documentation) and only claim public code, benchmarks or reproducibility that reviewers can inspect today.
